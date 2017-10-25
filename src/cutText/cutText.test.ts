@@ -30,8 +30,13 @@ describe("cutText",  () => {
     },  
     {
       text: "Hi everybody! Get fun!",
-      numOfChars: 15,
+      numOfChars: 17,
       answer: "Hi everybody!..."
+    },  
+    {
+      text: "Hi everybody! Get fun!",
+      numOfChars: 21,
+      answer: "Hi everybody! Get..."
     },  
     {
       text: "Hi everybody! Get fun!",

@@ -3,7 +3,7 @@ export default function cutText(numOfChars: number, text: string): string {
   let dots: string = "..."
   let output: string = getOutput(numOfChars, text);
   
-  if (numOfChars > text.length){
+  if (numOfChars >= text.length && text.length !== 0){
     return text
   }
   
