@@ -1,0 +1,35 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon dist/index.js",
+    "tasks": "gulp",
+    "test": "npm run build && mocha --require ts-node/register 'src/**/*.test.ts'"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.1",
+    "morgan": "^1.9.0",
+    "typescript": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.34",
+    "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.1.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0"
+  }
+}
