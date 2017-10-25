@@ -7,10 +7,6 @@ export default function cutText(numOfChars: number, text: string): string {
     return text
   }
   
-  if (lastCharIsASpace(output, words[0])) {
-    numOfChars--;
-  }
-
   while (!isDone(output, words[0])) {
     
     if (numOfChars === 0) {
@@ -20,7 +16,11 @@ export default function cutText(numOfChars: number, text: string): string {
     numOfChars--;
     output = getOutput(numOfChars, text);
   }
-
+  
+  if (lastCharIsASpace(output, words[0])) {
+    numOfChars--;
+  }
+  
   return getOutput(numOfChars, text).concat(dots);
 }
 
