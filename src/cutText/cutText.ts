@@ -1,15 +1,25 @@
 export default function cutText(numOfChars: number, text: string): string {
+<<<<<<< HEAD
   let words: string[] = text.split(" ");
   let dots: string = "..."
   let output: string = getOutput(numOfChars, text);
   
+=======
+>>>>>>> 3cd643f2be50b56dfb61458faea532dfc15453c2
   if (numOfChars > text.length){
     return text
   }
   
+<<<<<<< HEAD
   if (lastCharIsASpace(output, words[0])) {
     numOfChars--;
   }
+=======
+  let words: string[] = text.split(" ");
+  let dots: string = "..."
+  let output: string = getOutput(numOfChars, text);
+
+>>>>>>> 3cd643f2be50b56dfb61458faea532dfc15453c2
 
   while (!isDone(output, words[0])) {
     
@@ -21,11 +31,21 @@ export default function cutText(numOfChars: number, text: string): string {
     output = getOutput(numOfChars, text);
   }
 
+<<<<<<< HEAD
   return getOutput(numOfChars, text).concat(dots);
 }
 
 
 
+=======
+  if (lastCharIsASpace(output, words[0])) {
+    numOfChars--;
+  }
+
+  return getOutput(numOfChars, text).concat(dots);
+}
+
+>>>>>>> 3cd643f2be50b56dfb61458faea532dfc15453c2
 function getOutput(numOfChars: number, text: string): string {
   return text.slice(0, numOfChars);
 }
